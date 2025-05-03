@@ -1,0 +1,84 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Стиль шапки */
+.site-header {
+  background: linear-gradient(90deg, #1e3c72, #2a5298); /* Градиент футбольных цветов */
+  color: white;
+  padding: 15px 0;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Логотип */
+.logo img {
+  height: 50px; /* Размер логотипа */
+}
+
+/* Навигация */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+  color: #ffdd00; /* Желтый цвет при наведении */
+}
+
+/* Кнопка */
+.cta-button {
+  background-color: #ffdd00; /* Ярко-желтый цвет */
+  color: #1e3c72; /* Темно-синий текст */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ffc107; /* Светлее при наведении */
+  transform: scale(1.05); /* Небольшое увеличение */
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
